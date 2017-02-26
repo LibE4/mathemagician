@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MathMagician.Numbers
 {
-    interface Integer
+    public class Odd : NaturalNumber
     {
-        int GetFirst();
-        int GetNext(int current);
-        int[] GetSequence(int how_many);
-        string PrintNumbers(int[] how_many);
+        public Odd()
+        {
+            Step = 2;
+        }
     }
 }

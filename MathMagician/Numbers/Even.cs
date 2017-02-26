@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace MathMagician.Numbers
 {
-    interface Integer
+    public class Even : NaturalNumber
     {
-        int GetFirst();
-        int GetNext(int current);
-        int[] GetSequence(int how_many);
-        string PrintNumbers(int[] how_many);
+        public Even()
+        {
+            First = 2;
+            Step = 2;
+        }
     }
 }
